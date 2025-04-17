@@ -18,6 +18,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run
-      run:
+      run: |
         rustup override set nightly
         cargo run --release
