@@ -112,7 +112,7 @@ fn main() -> Result<(), DspCalError> {
     // TODO 增加真正的原矿化（直接移除相关的公式）
 
     // 设置
-    let config = Config { cocktail: true };
+    let config = Config { cocktail: false };
 
     // 生成所有的公式
     let powers = Recipe::powers();
