@@ -92,7 +92,7 @@ fn main() -> Result<(), DspCalError> {
             item_id: 6006,
             level: 4,
         }),
-        num: 10000.0,
+        num: 3750.0,
     };
 
     // let need_proliferator_mk3 = Resource {
