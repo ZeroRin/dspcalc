@@ -140,7 +140,7 @@ fn main() -> Result<(), DspCalError> {
 
     let weights: Vec<_> = recipes
         .iter()
-        .map(|recipe| recipe.info.building_type.lag())
+        .map(|recipe| recipe.info.building_type.count())
         .collect();
 
     // FIXME 检查并确保所有需求都在配方中
