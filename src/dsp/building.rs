@@ -56,6 +56,16 @@ impl BuildingType {
         }
     }
 
+    
+    // TODO 做出更严格的密铺模块后替换
+    #[must_use]
+    pub const fn count(&self) -> f64 {
+        match self {
+            Self::熔炉 | Self::化工 | Self::精炼厂 | Self::制造台 | Self::对撞机 |Self::小太阳 |Self::锅盖 | Self::分馏塔 | Self::科研站 => 1,
+            Self::矿机 | Self::喷涂机 => 0.0,
+        }
+    }
+
     // TODO 做出更严格的密铺模块后替换
     #[must_use]
     pub const fn area(&self) -> f64 {
